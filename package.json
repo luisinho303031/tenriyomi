@@ -28,7 +28,7 @@
     "prepare": "husky"
   },
   "engines": {
-    "node": "24.13.0"
+    "node": "24.13.1"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": "eslint --fix"
