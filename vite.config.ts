@@ -20,9 +20,7 @@ import 'dotenv/config';
 // eslint-disable-next-line import/no-default-export
 export default defineConfig(({ command }) => ({
     base: command === 'serve' ? process.env.VITE_SUBPATH || './' : './',
-    build: {
-        outDir: 'build',
-    },
+
     server: {
         port: Number(process.env.PORT),
         allowedHosts: process.env.ALLOWED_HOSTS.split(',').map((s) => s.trim()),
